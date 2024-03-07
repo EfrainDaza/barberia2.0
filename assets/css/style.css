@@ -1,0 +1,676 @@
+/*PALETA DE COLORES*/
+:root{
+--color-title:#EAEAEA;
+--color-cuerpo:#F9F9F9;
+--color-hover:#B1734A;
+--color-border-menu:#CF814D;
+--color-fondo:#101010;
+
+--color-variable7:#B7B7B7;
+--color-variable5:#A0633A;
+
+
+
+
+}
+
+
+/* ESTILOS GENERALES */
+html{
+    font-size: 10px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+}
+.layout{
+    width: 100%;
+    min-width: 1200px; 
+    height: 100%;
+}
+/*MENU*/
+.layout__menu{
+    width: 100%;
+    height: 50rem;
+    padding: 1rem 1rem;
+    background-image: url(/assets/img/banner-menu2.png);
+    background-size: cover;
+}
+
+.menu__header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#0c1c2938;
+
+    border: 4px double var(--color-border-menu);
+}
+.navbar__logo{
+    width: 120px;
+    height: 100%;
+}
+.navbar__logo-img{
+    width: 100%;  
+    transition: all 400ms ease-in-out;
+}
+.navbar__logo-img:hover{
+    transform: scale(1.2);
+}
+.navbar__nav{
+   width: 70%;
+}
+.nav__list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.nav__item{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    margin: 0 1.5rem;
+    background-color: transparent;
+    transition: all 400ms ease-in-out;
+}
+
+.nav__title{
+    width: 100%;
+    font-size: 1.9rem;
+    color: var(--color-title);
+    position: relative;
+    display: inline-block;
+    line-height: 6rem;
+    transition: all 400ms linear;
+}
+
+.nav__title::before{  /*linea de cuando pasamos el mause sobre item de nav*/
+    content: "";
+    height: 0.2rem;
+    width: 0%;
+    background-color: var(--color-title);
+    position: absolute;
+    bottom: 1.2rem;
+    right: 0;
+    opacity: 0;
+    transition:all 400ms ease-in-out;
+}
+.nav__title:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+.nav__register{
+    display: inline-block;
+    background-color: var(--color-border-menu);
+    color: var(--color-fondo);
+    font-size: 1.9rem;
+    padding: 0.5rem 1rem;
+    border-radius:0.5rem;
+    transition: all 300ms ease-in-out;
+}
+.nav__register:hover{
+    background-color: var(--color-cuerpo);
+}
+
+/*SERVICE*/
+
+.layout__servicio{
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: var(--color-fondo);
+}   
+
+    .services__header,
+    .galeria__heade{
+        width: 100%;
+
+    }
+
+    .services__title,
+    .galeria__title{
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1.2rem;
+        font-size: 7rem;
+        color: var(--color-title);
+        cursor: pointer;
+    }
+.separador{
+    position: relative;
+    border-top: 1px solid var(--color-border-menu);
+    width: 240px;
+    clear: both;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.separador::before{
+    background: none repeat scroll 0% 0% var(--color-border-menu);
+    content: "";
+    height: 10px;
+    left: 0%;
+    margin: -5px auto auto -5px;
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 10px;
+}
+.separador::after {
+    background: none repeat scroll 0% 0% var(--color-border-menu);
+    content: "";
+    height: 10px;
+    right: 0%;
+    margin: -5px auto auto -5px;
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 10px;
+}
+
+.services__list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 6rem 0;
+    
+}
+.services__service{
+    width: 20%;
+    padding: 1.5rem 0;
+    border: 1px solid var(--color-border-menu);
+    position: relative;
+    z-index: 99999;
+}
+.service__container-img{
+    width: 100%;
+}
+.d-deco{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: solid 1px var(--color-border-menu);
+    top: -10px;
+    right: -10px;
+    z-index: 1;
+}
+
+.service__img{
+    width: 70%;
+    margin: 1rem auto;
+}
+.service__title{
+    padding: 1rem 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: var(--color-cuerpo);
+    text-align: center;
+    cursor: pointer;
+}
+.service__link{
+    cursor: pointer;
+}
+.service__description{
+    font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+    width: 95%;
+    height: 15rem;
+    font-size: 1.3rem;
+    color: var(--color-cuerpo);
+    text-align: justify ;
+    /*letter-spacing: 0.1rem;*/
+    padding-left: 2.5rem;
+    cursor: pointer;
+}
+    .service-mora__container,
+    .form__container-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5rem;
+    }
+    .service__more,
+    .form__btn{
+        width: 10rem;
+        height: 4rem;
+        padding: 0.7rem;
+        text-align: center;
+        font-size: 1.9rem;
+        color: var(--color-cuerpo);
+        background-color: var(--color-border-menu);
+        transition: all 300ms ease-in-out;
+    }
+    .service__more:hover,
+    .form__btn:hover{
+    color: var(--color-border-menu);
+    background-color: var(--color-cuerpo);
+    }
+
+/*GALERIA*/
+
+.layout__galeria{
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: var(--color-fondo);
+    position: relative;
+    z-index: 1;
+}
+
+.carrousel{
+    margin: 0 auto;
+    width: 70%;
+    padding: 2rem;
+    color:transparent;
+    transition: all 300ms ease;
+    background-color: transparent;
+    border: 4px double var(--color-border-menu);
+    overflow: hidden;
+    margin-bottom: 5rem;
+  }
+  
+  .grande{
+    width: 500%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; 
+    align-items: center;
+    color: transparent;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: transparent;
+  
+    padding: 2rem;
+    transition: all 300ms ease;
+    transform: translateX(0%);
+  }
+  
+  .img{
+    width: calc( 100% / 5 - 3.5rem);
+    min-height: 10vh;
+    color: red;
+    transition: all 300ms ease;
+    background-color: red;
+
+  }
+  
+  .puntos{
+    width: 100%;
+    margin: 1rem 0 0;
+    padding: 0.4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .punto{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 1rem 0;
+    color: var(--color-cuerpo);
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: var(--color-border-menu);
+  
+  }
+  
+  .activo{
+    background-color:var(--color-cuerpo);
+  }
+
+  /*FOOTER*/
+
+.layout__footer{
+    width: 100%;
+    height: 50rem;
+    background-image: url(/assets/img/fondo-footer2.jpg);
+    background-size: cover;
+   
+}
+.fondo-footer{
+    width: 100%;
+    height: 50rem;
+    background: linear-gradient(180deg, rgba(16, 16, 16, 1) 0%, rgba(16, 16, 16, 0) 100%);
+}
+.footer__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer__left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+.footer__ltop{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__logo{
+    width: 30%;
+    margin-top: 5rem;
+}
+.footer__link-logo{
+    width: 120px;
+    margin: 0 auto;
+    transition: all 300ms ease-in-out;
+}
+.footer__link-logo:hover{
+    transform: scale(1.2);
+}
+.footer__nav{
+    width: 30%;
+    margin-top: 6rem;
+    text-align: left;
+}
+.footer-nav__title{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    transition: all 300ms ease-in-out;
+    color: var(--color-cuerpo);
+}
+.footer-nav__title:hover{
+    color: var(--color-border-menu);
+}
+.footer__location{
+    width: 30%;
+    margin-top: 6rem;
+}
+.footer-location__title{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 0.2rem;
+    color: var(--color-cuerpo);
+}
+.footer-location__description{
+    font-family:"Plus Jakarta Sans", Arial, Helvetica, sans-serif ;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: justify;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--color-cuerpo);
+}
+
+.footer_lbotom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+    .footer-social__title,
+    .footer-right__title{
+        text-transform: uppercase;
+        font-size: 1.9rem;
+        letter-spacing: 0.2rem;
+        color: var(--color-cuerpo);
+    }
+.footer-social__list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+.social__link{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+    color: var(--color-cuerpo);
+    background-color: var(--color-border-menu);
+}
+.social__link:hover{
+    background-color:#282828;
+    color: var(--color-border-menu);
+}
+.footer-social__img{
+    font-size: 1.9rem;
+}
+
+
+.footer__right{
+    width: 50%;
+
+}
+.footer-right__header{
+    width: 100%;
+    margin-top: 2rem;
+}
+.footer-right__title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.footer__form{
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.form__label{
+    position: absolute;
+    top: 0.4rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--color-cuerpo);
+    transition: all 300ms ease-in-out;
+    pointer-events: none; /* que no interfiera cuando hacemos click en el la letra del label*/
+}
+    .form__container-name,
+    .form__container-email,
+    .form__container-mensaje{
+        width: 50%;
+        margin-top: 2.5rem;
+        position: relative;
+    }
+.form__input{
+    width: 100%;
+    height: 2.9rem;
+    position: relative;
+    display: block;
+    border: none;
+    border: 1px solid var(--color-border-menu);
+    background-color: transparent;  
+    font-family:"Plus Jakarta Sans", Arial, Helvetica, sans-serif ;
+    font-size: 1.4rem;
+    outline: none;/*para sacar los remarcados del campo*/
+    font-weight: 600;
+    color: var(--color-cuerpo);
+}
+.form__input:focus{
+    border: 1px solid var(--color-cuerpo);
+}
+.form__input:focus~label,/* para que haga efecto en el input y su hermano label*/
+.form__input:not(:placeholder-shown)~label{/*para que no interfiera la animacion del label con las letras que completamos el campo*/
+    top: -2rem;
+    left: 0;
+    z-index: 1;
+    font-size: 1.3rem;
+    color: var(--color-border-menu);
+}
+.form__input::-webkit-input-placeholder{ /*ocultar el placeholder del input*/
+    color: transparent;
+}
+.form__input::-moz-placeholder{/*ocultar el placeholder del input*/
+    color: transparent;
+}
+
+
+.form__textarea{
+    width: 100%;
+    height: 10rem;
+    font-family:"Plus Jakarta Sans", Arial, Helvetica, sans-serif ;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    color: var(--color-cuerpo);
+    border: none;
+    border: 1px solid var(--color-border-menu);
+    background: rgba(0, 0, 0, .025); 
+}
+
+.form__container-btn{
+    margin-top: 2.5rem;
+    padding-bottom: 0;
+}
+.form__btn{
+    border: none;
+}
+
+
+
+.footer__bottom{
+    width: 100%;
+    display: flex;
+    padding-top: 6.7rem;
+    align-items: flex-end;
+
+
+}
+.footer__copyright{
+    width: 50%;
+    padding: 1rem 1rem;
+}
+.copyright__text{
+    display: inline-block;
+    color: var(--color-cuerpo);
+    font-family:"Plus Jakarta Sans", Arial, Helvetica, sans-serif ;
+    font-size: 1.2rem;
+}
+.copyright__text > a{
+    display: inline-block;
+}
+.footer__links{
+    width: 50%;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3.5rem;
+    color: var(--color-cuerpo);
+}
+.flinks__title{
+    font-family:"Plus Jakarta Sans", Arial, Helvetica, sans-serif ;
+    font-size: 1.2rem;
+    transition: all 300ms ease-in-out;
+}
+
+.flinks__title:hover{
+    color: var(--color-border-menu);
+}
+.flinks__item{
+    display: inline-block;
+    position: relative;
+}
+
+/*REGISTER*/
+.layout__register{
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: var(--color-fondo);
+}
+.container__register{
+    width: 100%;
+    height: 55rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 3rem 0rem;
+}
+.fondo-register__imagen{
+    width: 60%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid  #A0633A;
+}
+.register__form{
+    width: 25%;
+    height: 100%;
+    padding: 3rem 1rem;
+    background-color: rgba(255, 255, 255, 0.13);
+    border: 1px solid var(--color-border-menu);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    backdrop-filter: blur(10px);
+    transition: all 300ms ease-in-out;
+}
+    .register-form__name,
+    .register-form__email,
+    .register-form__last-name,
+    .register-form__password{
+        width: 90%;
+        color: var(--color-fondo);
+       
+    }
+.register-form__image{
+    width: 90%;
+
+}
+.fotoRegister{
+    width: 100%;
+    font-size: 1.3rem;
+    color: var(--color-fondo);
+}
+    .form__input-register{
+        width: 100%;
+        font-size: 1.9rem;
+    }
+    .form__label-register{
+        width: 100%;
+        font-size: 1.9rem;
+
+    }
+.registro-form__logins{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logins__description{
+    font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--color-fondo);
+}
+.logins__link{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    color: var(--color-fondo);
+    transition: all 300ms ease-in-out;
+}
+.logins__link:hover{
+    color: var(--color-border-menu);
+}   
+

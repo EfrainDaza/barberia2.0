@@ -1,0 +1,13 @@
+@font-face{/* elegimos la fuente que queremos en la web*/
+    font-family: "Plus Jakarta Sans";
+    src: url('/PlusJakartaSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Bebas Neue";
+    src: url('/assets/fonts/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}

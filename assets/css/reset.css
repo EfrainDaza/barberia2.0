@@ -1,0 +1,56 @@
+/* se resetea todo los efectos por defectos*/
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+*,
+*::before,
+*::after{
+    
+    /* son para otros navegadores puedan aplicar estas propiedades del box sizing*/
+    /*https://caniuse.com/?search=box-sizing pagina para ver las versiones*/
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh; /* 100 de el largo dela pagina*/
+    scroll-behavior: smooth; /* scroll suavisado*/
+    text-rendering: optimizeSpeed; /* renderisa la vista mas rapido*/
+    line-height: 1.5;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+p a{
+    display: inline;
+}
+img,video,iframe,picture,figure{
+    max-width: 100%;
+    display: block;
+   
+    object-fit: cover;
+    object-position: center center;
+}
+form,input, select,textarea,label,button{
+    display: block;
+    /* inherit es para que herede tipo de letra, tamaño fuente y color del contenedor padre*/
+    font-family: inherit; /* fon family heredaro*/
+    font-size: inherit; /* fon zise heredaro*/
+    color: inherit; /* fon color heredaro*/
+}
