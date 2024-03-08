@@ -52,7 +52,8 @@
                         </li>
     
                         <li class="nav__item">
-                            <a href="#" class="nav__title">inicio</a>
+                            
+                            <a href="#" class="nav__title" onclick="openModal()">Iniciar Sesión</a>
                         </li>
                     </ul>
                 </nav>
@@ -187,6 +188,44 @@
             </div>
 
         </section>
+
+        <!--INICIAR SESION-->
+      
+        <!-- La ventana modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Contenido del modal -->
+            <div class="modal-content">
+
+                <header class="login__header">
+
+                    <h3 class="login__title-header">Inicio de Sesión</h3>
+                    
+                    <span class="login__span" onclick="closeModal()"><i class="fa-solid fa-xmark login__icon-header" ></i></span>
+
+                </header>
+                
+
+                <form class="form__login">
+                    
+                    <div class="login-form__name">
+                        <input type="text" id="username" name="username" placeholder="Usuario" class="form__input-login">
+                        <label for="username" class="form__label-login">Usuario:</label>
+                    </div>
+                    
+                    <div class="login-form__password">
+                        <input type="password" id="password" name="password" placeholder="Contraseña" class="form__input-login">
+                        <label for="password" class="form__label-login">Contraseña:</label>
+                    </div>
+                    <div class="login-form__btn">
+                        <button type="submit" class="btn__login">Iniciar Sesión</button>
+                    </div>
+                   
+
+                </form>
+
+            </div>
+        </div>
 
         <!--FOOTER-->
 
@@ -348,5 +387,6 @@
 
     </div>
         <script src="/assets/js/galeria.js"></script>
+        <script src="/assets/js/login.js"></script>
 </body>
 </html>

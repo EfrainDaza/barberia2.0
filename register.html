@@ -52,7 +52,7 @@
                         </li>
     
                         <li class="nav__item">
-                            <a href="#" class="nav__title">inicio</a>
+                            <a href="#" class="nav__title" onclick="openModal()">Iniciar Sesión</a>
                         </li>
                     </ul>
                 </nav>
@@ -73,10 +73,7 @@
 
             <div class="container__register">
 
-                <div class="fondo-register__imagen">
-                    <img src="./assets/img/banner-menu.png" alt="lado derecho" class="fondo-register__img">
-                </div>
-
+                
                 
                 <form class="register__form">
 
@@ -97,8 +94,8 @@
                         <label for="password" class="form__label-register">contraseña</label>
                     </div>
                     <div class="register-form__image">
-                        <input type="file" name="fotoRegister" accept=".jpg, .png, .jpeg, .gif" id="fotoRegister" class="fotoRegister">
-                        <label for="fotoRegister" class="fotoRegister">Foto de perfil</label>
+                        <input type="file" name="fotoRegister" accept=".jpg, .png, .jpeg, .gif" id="fotoRegister" class="form__input-fotoR">
+                        <label for="fotoRegister" class="form__label-fotoR">Foto de perfil</label>
                     </div>
                     <div class="register-form__buttons">
                         <button  class="buttons__button" type="submit">CREAR CUENTA</button>
