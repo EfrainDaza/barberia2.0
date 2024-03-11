@@ -1,34 +1,57 @@
-'use strict'
+//Este evento se dispara cuando el DOM (la estructura HTML de la página) ha sido completamente cargado
 
-const grande    = document.querySelector('.grande')
-const punto     = document.querySelectorAll('.punto')
+document.addEventListener('DOMContentLoaded', function() {
+    //CAPTURAMOS ELEMTOS
+    const images = document.querySelectorAll('.gallery__img');
+    //indice/img actual visible en la galeria
+    let currentIndex = 0;
+    //recorre las img o el total de las img
+    const totalImages = images.length;
 
-// Cuando CLICK en punto
-    // Saber la posición de ese punto
-    // Aplicar un transform translateX al grande
-    // QUITAR la clase activo de TODOS puntos
-    // AÑADIR la clase activo al punto que hemos hecho CLICK
+    // FUNCION PARA MOSTRAR IMG ACTUAL
+    function showImage(index) {
+        //itera sobre las img
+        images.forEach((image, i) => {
+            //si el indice coincide los muestra, sino lo oculta
+            if (i === index) {
+                image.style.display = 'block';
+            } else {
+                image.style.display = 'none';
+            }
+        });
+        // ACTUALIZA LA IMG ACTUAL
+        currentIndex = index;
+    }
 
-// Recorrer TODOS los punto
-punto.forEach( ( cadaPunto , i )=> {
-    // Asignamos un CLICK a cadaPunto
-    punto[i].addEventListener('click',()=>{
+    // CAPTURAMOS BOTONES
+    const nextButton = document.querySelector('.next-button');
+    // eventos cuando hacemos click
+    nextButton.addEventListener('click', nextImage);
 
-        // Guardar la posición de ese PUNTO
-        let posicion  = i
-        // Calculando el espacio que debe DESPLAZARSE el GRANDE
-        let operacion = posicion * -20
+    // Función para cambiar a la siguiente imagen
+    function nextImage() {
+        //calcula el indice de la next img
+        currentIndex = (currentIndex + 1) % totalImages;
+        //resultado de next img
+        showImage(currentIndex);
+    }
 
-        // MOVEMOS el grand
-        grande.style.transform = `translateX(${ operacion }%)`
- 
-        // Recorremos TODOS los punto
-        punto.forEach( ( cadaPunto , i )=>{
-            // Quitamos la clase ACTIVO a TODOS los punto
-            punto[i].classList.remove('activo')
-        })
-        // Añadir la clase activo en el punto que hemos hecho CLICK
-        punto[i].classList.add('activo')
+      // CAPTURAMOS BOTONES
+      const prevButton = document.querySelector('.prev-button');
+      // eventos cuando hacemos click
+      prevButton.addEventListener('click', prevImage);
 
-    })
-})  
+    // Función para cambiar a la imagen anterior
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        showImage(currentIndex);
+    }
+
+    // MUESTRA LA PIRMERI IMG AL CARGAR LA PAGINA
+    showImage(currentIndex);
+
+    // AUTOSLIDER CON SEGUNDOS
+    setInterval(nextImage, 3000);
+
+  
+});

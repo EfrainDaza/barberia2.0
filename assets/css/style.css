@@ -110,13 +110,14 @@ body{
 .nav__register{
     display: inline-block;
     background-color: var(--color-border-menu);
-    color: var(--color-fondo);
+    color: var(--color-cuerpo);
     font-size: 1.9rem;
     padding: 0.5rem 1rem;
     transition: all 300ms ease-in-out;
 }
 .nav__register:hover{
-    background-color: var(--color-cuerpo);
+   color: var(--color-border-menu);
+   background-color: var(--color-cuerpo);
 }
 
 /*SERVICE*/
@@ -128,13 +129,13 @@ body{
 }   
 
     .services__header,
-    .galeria__heade{
+    .gallery__heade{
         width: 100%;
 
     }
 
     .services__title,
-    .galeria__title{
+    .gallery__title{
         font-weight: 700;
         text-align: center;
         text-transform: uppercase;
@@ -203,6 +204,7 @@ body{
 .service__img{
     width: 70%;
     margin: 1rem auto;
+    margin-right: 3.5rem;
 }
 .service__title{
     padding: 1rem 0;
@@ -232,98 +234,59 @@ body{
         width: 100%;
         display: flex;
         justify-content: center;
-        padding-bottom: 5rem;
-    }
-    .service__more,
-    .form__btn{
-        width: 10rem;
-        height: 4rem;
-        padding: 0.7rem;
-        text-align: center;
-        font-size: 1.9rem;
-        color: var(--color-cuerpo);
-        background-color: var(--color-border-menu);
-        transition: all 300ms ease-in-out;
-    }
-    .service__more:hover,
-    .form__btn:hover{
-    color: var(--color-border-menu);
-    background-color: var(--color-cuerpo);
+        margin-top: 2rem;
     }
 
 /*GALERIA*/
 
-.layout__galeria{
+.layout__gallery{
     width: 100%;
     padding: 1rem 1rem;
     background-color: var(--color-fondo);
-    position: relative;
-    z-index: 1;
 }
 
-.carrousel{
+.container__gallery{
+    width: 75rem;
     margin: 0 auto;
-    width: 70%;
-    padding: 2rem;
-    color:transparent;
-    transition: all 300ms ease;
-    background-color: transparent;
-    border: 4px double var(--color-border-menu);
     overflow: hidden;
-    margin-bottom: 5rem;
-  }
-  
-  .grande{
-    width: 500%;
+    position: relative;
+}
+.gallery__image{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between; 
-    align-items: center;
-    color: transparent;
-    transition: all 0.4s ease;
-    border-radius: 1rem;
-    background-color: transparent;
-  
-    padding: 2rem;
-    transition: all 300ms ease;
-    transform: translateX(0%);
-  }
-  
-  .img{
-    width: calc( 100% / 5 - 3.5rem);
-    min-height: 10vh;
-    color: red;
-    transition: all 300ms ease;
-    background-color: red;
-
-  }
-  
-  .puntos{
+    transition: all 300ms linear;
+}
+.gallery__img{
     width: 100%;
-    margin: 1rem 0 0;
-    padding: 0.4rem;
+    flex-shrink: 0; /* respeta el espacio de l img*/
+    transition: all 300ms ease-in;
+}
+.container__btn-gallery{
+    width: 100%;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .punto{
-    width: 2rem;
-    height: 2rem;
-    margin: 1rem 1rem 0;
-    color: var(--color-cuerpo);
-    transition: all 0.4s ease;
-    border-radius: 1rem;
-    background-color: var(--color-border-menu);
-  
-  }
-  
-  .activo{
-    background-color:var(--color-cuerpo);
-  }
-
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 2rem;
+}
+    .btn-gallery__click,
+    .form__btn,
+    .service__more{
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border: none;
+        color: var(--color-cuerpo);
+        background-color: var(--color-border-menu);
+        transition: all 300ms ease-in-out;
+    }
+    .btn-gallery__click:hover,
+    .form__btn:hover,
+    .service__more:hover{
+        color: var(--color-border-menu);
+        background-color:var(--color-cuerpo);
+    }
   /*FOOTER*/
 
 .layout__footer{
@@ -336,6 +299,7 @@ body{
 .fondo-footer{
     width: 100%;
     height: 50rem;
+    padding: 1rem 1rem;
     background: linear-gradient(180deg, rgba(16, 16, 16, 1) 0%, rgba(16, 16, 16, 0) 100%);
 }
 .footer__container{
@@ -356,6 +320,7 @@ body{
 .footer__ltop{
     width: 100%;
     display: flex;
+    margin-top: 2.1rem;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -435,6 +400,7 @@ body{
     width: 3.5rem;
     height: 3.5rem;
     margin: 0 1rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -443,8 +409,8 @@ body{
     background-color: var(--color-border-menu);
 }
 .social__link:hover{
-    background-color:#282828;
     color: var(--color-border-menu);
+    background-color: var(--color-cuerpo);
 }
 .footer-social__img{
     font-size: 1.9rem;
@@ -536,10 +502,6 @@ body{
     background: rgba(0, 0, 0, .025); 
 }
 
-.form__container-btn{
-    margin-top: 2.5rem;
-    padding-bottom: 0;
-}
 .form__btn{
     border: none;
 }
@@ -749,7 +711,7 @@ body{
 /*INICIAR SESION*/
 
 /* Estilos CSS para el formulario y la ventana modal */
-.modal {
+.modal{
     display: none;
     position: fixed;
     z-index: 999999;
@@ -775,7 +737,8 @@ body{
 .login__header{
 
     width: 100%;
-    height: auto;
+    height: auto; 
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;  
@@ -791,6 +754,7 @@ body{
 }
 .login__icon-header{
     font-size: 3rem;
+    cursor: pointer;
     color:var(--color-cuerpo);
     transition: all 300ms ease-in-out;
 }
@@ -802,6 +766,9 @@ body{
 
 .form__login{
     width: 100%;
-    height: 87%;
-
+    height: 90%;
+    padding: 1rem 1rem;
+}
+.login-form__password{
+    margin-top: 0rem;
 }

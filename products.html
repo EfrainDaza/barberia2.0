@@ -48,8 +48,7 @@
                         </li>
     
                         <li class="nav__item">
-                            
-                            <a href="#" class="nav__title" id="openModal">Iniciar Sesión</a>
+                            <a href="#" class="nav__title" onclick="openModal()">Iniciar Sesión</a>
                         </li>
                     </ul>
                 </nav>
@@ -58,170 +57,23 @@
             
 
         </section>
-        <!--SERVICIO-->
-        <section class="layout__servicio">
 
-            <header class="services__header">
+        <!--REGRISTRO-->
 
-                <h2 class="services__title">servicios</h2>
+        <section class="layout__register">
+
+            <header class="galeria__header">
+
+                <h2 class="galeria__title">registrarse</h2>
                 <div class="separador"></div>
 
             </header>
 
-            <div class="services__list">
-    
-                <article class="services__service services__service--bottom">
-
-                    <div class="service__container-img">
-                        <img class="service__img" src="./assets/img/servicio1.jpg" alt="icono-service">
-                    </div>
                     
-                    <div class="services__content">
-                        <h3 class="service__title">
-                            <a href="#" class="service__link">cortes de pelo</a>
-                        </h3>
-                        <p class="service__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nihil. 
-                        Laudantium delectus mollitia veniam hic excepturi fugit ipsa quae 
-                        voluptatem, quam velit quaerat impedit placeat asperiores.
-                        </p>
-
-                    </div>
-                    <div class="d-deco"></div>
-                </article>
-
-                <article class="services__service services__service--bottom">
-
-                    <div class="service__container-img">
-                        <img class="service__img" src="./assets/img/servicio2.jpg" alt="icono-service">
-                    </div>
-                    
-                    <div class="services__content">
-                        <h3 class="service__title">
-                            <a href="#" class="service__link">corte de barba</a>
-                        </h3>
-                        <p class="service__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nihil. 
-                        Laudantium delectus mollitia veniam hic excepturi fugit ipsa quae 
-                        voluptatem, quam velit quaerat impedit placeat asperiores.
-                        </p>
-
-                    </div>
-                    <div class="d-deco"></div>
-                </article>
-
-                <article class="services__service services__service--bottom">
-
-                    <div class="service__container-img">
-                        <img class="service__img" src="./assets/img/servicio3.jpg" alt="icono-service">
-                    </div>
-                    
-                    <div class="services__content">
-                        <h3 class="service__title">
-                            <a href="#" class="service__link">Afeitado</a>
-                        </h3>
-                        <p class="service__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nihil. 
-                        Laudantium delectus mollitia veniam hic excepturi fugit ipsa quae 
-                        voluptatem, quam velit quaerat impedit placeat asperiores.
-                        </p>
-
-                    </div>
-                    <div class="d-deco"></div>
-                </article>
-
-                <article class="services__service services__service--bottom">
-
-                    <div class="service__container-img">
-                        <img class="service__img" src="./assets/img/servicio4.jpg" alt="icono-service">
-                    </div>
-                    
-                    <div class="services__content">
-                        <h3 class="service__title">
-                            <a href="#" class="service__link">corte con cuchillas</a>
-                        </h3>
-                        <p class="service__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nihil. 
-                        Laudantium delectus mollitia veniam hic excepturi fugit ipsa quae 
-                        voluptatem, quam velit quaerat impedit placeat asperiores.
-                        </p>
-
-                    </div>
-                    <div class="d-deco"></div>
-                </article>
-
-            </div>
-           <div class="service-mora__container">
-            <a href="#" class="service__more">Leer Mas</a>
-           </div>
-        </section>
-        <!--GALERIA-->
-        <section class="layout__gallery">
-
-            <header class="galley__header">
-
-                <h2 class="gallery__title">galeria</h2>
-                <div class="separador"></div>
-
-            </header>
-
-            <div class="container__gallery">
-
-                    <div class="gallery__image">
-                        <img class="gallery__img" src="./assets/img/galeria1.png" alt="Image 1">
-                        <img class="gallery__img" src="./assets/img/galeria2.png" alt="Image 2">
-                        <img class="gallery__img" src="./assets/img/galeria3.png" alt="Image 3">
-                        <img class="gallery__img" src="./assets/img/galeria4.png" alt="Image 4">
-                        <img class="gallery__img" src="./assets/img/galeria5.png" alt="Image 5">
-                    </div>
-
-                    <div class="container__btn-gallery">
-                        <button class="btn-gallery__click prev-button" >Prev</button>
-                        <button class="btn-gallery__click next-button" >Next</button>
-                    </div>
                 
-            </div>
                 
 
         </section>
-
-    <!--INICIAR SESION-->
-      
-    <!-- La ventana modal -->
-    <div id="myModal" class="modal">
-
-        <!-- Contenido del modal -->
-        <div class="modal-content">
-
-            <header class="login__header">
-
-                <h3 class="login__title-header">Inicio de Sesión</h3>
-                
-                <span class="login__span" id ="closeModal"><i class="fa-solid fa-xmark login__icon-header" ></i></span>
-
-            </header>
-            
-
-            <form class="form__login">
-                
-                <div class="login-form__name">
-                    <input type="text" id="username" name="username" placeholder="Usuario" class="form__input-login">
-                    <label for="username" class="form__label-login">Usuario:</label>
-                </div>
-                
-                <div class="login-form__password">
-                    <input type="password" id="password" name="password" placeholder="Contraseña" class="form__input-login">
-                    <label for="password" class="form__label-login">Contraseña:</label>
-                </div>
-                <div class="login-form__btn">
-                    <button type="submit" class="btn__login">Iniciar Sesión</button>
-                </div>
-                
-
-            </form>
-
-        </div>
-    </div>
 
         <!--FOOTER-->
 
@@ -383,6 +235,5 @@
 
     </div>
         <script src="/assets/js/galeria.js"></script>
-        <script src="/assets/js/login.js"></script>
 </body>
 </html>
