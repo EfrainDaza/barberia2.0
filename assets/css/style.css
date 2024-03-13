@@ -28,14 +28,14 @@ body{
 }
 .layout{
     width: 100%;
-    min-width: 1200px; 
     height: 100%;
 }
 /*MENU*/
 .layout__menu{
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
     width: 100%;
     height: 50rem;
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
     background-image: url(/assets/img/banner-menu2.png);
     background-size: cover;
 }
@@ -53,6 +53,7 @@ body{
 .navbar__logo{
     width: 120px;
     height: 100%;
+    padding-left: 1rem;
 }
 .navbar__logo-img{
     width: 100%;  
@@ -68,15 +69,16 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
+    padding-right: 1rem;
 }
 .nav__item{
-    width: 100%;
     height: 100%;
     text-align: center;
     padding: 0.5rem 0.5rem;
+    letter-spacing: 0.2rem;
     margin: 0 1.5rem;
     background-color: transparent;
     transition: all 400ms ease-in-out;
@@ -84,7 +86,8 @@ body{
 
 .nav__title{
     width: 100%;
-    font-size: 1.9rem;
+    font-size: 2rem;
+    text-transform: uppercase;
     color: var(--color-title);
     position: relative;
     display: inline-block;
@@ -107,14 +110,7 @@ body{
     width: 100%;
     opacity: 1;
 }
-.nav__register{
-    display: inline-block;
-    background-color: var(--color-border-menu);
-    color: var(--color-cuerpo);
-    font-size: 1.9rem;
-    padding: 0.5rem 1rem;
-    transition: all 300ms ease-in-out;
-}
+
 .nav__register:hover{
    color: var(--color-border-menu);
    background-color: var(--color-cuerpo);
@@ -124,26 +120,28 @@ body{
 
     .layout__servicio,
     .layout__products{
+        font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
         width: 100%;
-        padding: 1rem 1rem;
+        padding: 2rem 1rem;
         background-color: var(--color-fondo);
     }   
 
     .services__header,
     .gallery__heade,
-    .products__header{
+    .products__header,
+    .register__header{
         width: 100%;
 
     }
 
     .services__title,
     .gallery__title,
-    .products-header__title{
-        font-weight: 700;
+    .products-header__title,
+    .register__title{
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 1.2rem;
-        font-size: 7rem;
+        font-size: 5rem;
         color: var(--color-title);
         cursor: pointer;
     }
@@ -189,7 +187,7 @@ body{
     padding: 1.5rem 0;
     border: 1px solid var(--color-border-menu);
     position: relative;
-    z-index: 99999;
+    z-index: 333;
 }
 .service__container-img{
     width: 100%;
@@ -201,7 +199,7 @@ body{
     border: solid 1px var(--color-border-menu);
     top: -10px;
     right: -10px;
-    z-index: 1;
+    z-index: 22;
 }
 
 .service__img{
@@ -224,12 +222,14 @@ body{
 .service__description{
     font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
     width: 95%;
-    height: 15rem;
+
     font-size: 1.3rem;
+    text-transform: uppercase;
     color: var(--color-cuerpo);
     text-align: justify ;
     /*letter-spacing: 0.1rem;*/
     padding-left: 2.5rem;
+    padding-bottom: 1rem;
     cursor: pointer;
 }
     .service-mora__container,
@@ -244,37 +244,47 @@ body{
 
 .layout__gallery{
     width: 100%;
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
     background-color: var(--color-fondo);
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
 }
 
 .container__gallery{
-    width: 75rem;
+    width: 70%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    padding: 2rem;
+    border: 1px solid var(--color-border-menu);
 }
 .gallery__image{
+    width: 70rem;
+    height: 45rem;
     display: flex;
+    margin: 0 auto;
     transition: all 300ms linear;
 }
 .gallery__img{
     width: 100%;
+    object-fit: cover;
     flex-shrink: 0; /* respeta el espacio de l img*/
     transition: all 300ms ease-in;
 }
 .container__btn-gallery{
-    width: 100%;
+    width: 70rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    text-align: center;
+    margin: 0 auto;
     margin-top: 2rem;
+    
 }
+    /*reutilizacion de recursos botones*/
     .btn-gallery__click,
     .form__btn,
-    .service__more{
-        font-size: 1.9rem;
+    .service__more,
+    .nav__register{
+        font-size: 2rem;
         text-transform: uppercase;
         letter-spacing: 0.2rem;
         padding: 0.5rem 1rem;
@@ -290,62 +300,76 @@ body{
         color: var(--color-border-menu);
         background-color:var(--color-cuerpo);
     }
-  /*FOOTER*/
+
+
+/*FOOTER*/
 
 .layout__footer{
     width: 100%;
     height: 50rem;
     background-image: url(/assets/img/fondo-footer2.jpg);
     background-size: cover;
-   
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
 }
 .fondo-footer{
     width: 100%;
     height: 50rem;
-    padding: 1rem 1rem;
+    padding:2rem 1rem 0 1rem;
     background: linear-gradient(180deg, rgba(16, 16, 16, 1) 0%, rgba(16, 16, 16, 0) 100%);
 }
 .footer__container{
     width: 100%;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 2rem 2rem 0 2rem;
 }
 .footer__left{
-    width: 50%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
+    padding: 2rem;
 }
 .footer__ltop{
     width: 100%;
+    height: 20rem;
     display: flex;
-    margin-top: 2.1rem;
     flex-direction: row;
     justify-content: space-between;
+
 }
 .footer__logo{
-    width: 30%;
-    margin-top: 5rem;
-}
-.footer__link-logo{
     width: 120px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+}
+.footer__logo-img{
+    width: 100%;
     transition: all 300ms ease-in-out;
 }
-.footer__link-logo:hover{
+.footer__logo-img:hover{
     transform: scale(1.2);
 }
 .footer__nav{
-    width: 30%;
-    margin-top: 6rem;
-    text-align: left;
+    padding: 1rem;
 }
+.footer-nav__list{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.footer-nav__item{
+    margin: 0.5rem 0.5rem;
+    padding-left: 0.5rem;
+}
+
 .footer-nav__title{
-    font-size: 1.9rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     transition: all 300ms ease-in-out;
@@ -354,56 +378,89 @@ body{
 .footer-nav__title:hover{
     color: var(--color-border-menu);
 }
-.footer__location{
-    width: 30%;
-    margin-top: 6rem;
+    .footer__location,
+    .footer__contact{
+        padding: 1rem;
+    }
+    .footer-location__header,
+    .footer-contact__header{
+        margin: 0.5rem 0.5rem;
+    }
+    .footer-location__title,
+    .footer-contact__title{
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: left;
+        letter-spacing: 0.2rem;
+        color: var(--color-cuerpo);
+    }
+    .footer-contact__content,
+    .footer-location__content{
+        font-family:"Plus Jakarta Sans", Arial, Helvetica, sans-serif ;
+        text-align: justify;
+        text-align: left;
+        margin: 0.5rem 0.5rem;
+        padding-top: 1rem;
+    }
+    .footer-contact__list,
+    .footer-location__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .footer-contact__item,
+    .footer-location__item{
+        margin: 0.5rem 0.5rem;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: var(--color-cuerpo);
+        transition: all 300ms ease-in-out;
+    }
+.footer-location__item{
+    list-style-type: disc;
 }
-.footer-location__title{
-    font-size: 1.9rem;
-    text-transform: uppercase;
-    text-align: left;
-    letter-spacing: 0.2rem;
-    color: var(--color-cuerpo);
-}
-.footer-location__description{
-    font-family:"Plus Jakarta Sans", Arial, Helvetica, sans-serif ;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: justify;
-    text-align: left;
-    text-transform: uppercase;
-    color: var(--color-cuerpo);
-}
+.footer-contact__item:hover{
+    color: var(--color-border-menu);
 
-.footer_lbotom{
+}
+.footer-contact__link{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 3rem;
+}
+.footer-contact__icon{
+    margin-right: 0.5rem;
+}
+
+.footer_lbotom{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
     .footer-social__title,
     .footer-right__title{
         text-transform: uppercase;
-        font-size: 1.9rem;
+        font-size: 2rem;
         letter-spacing: 0.2rem;
+        padding: 1rem;
         color: var(--color-cuerpo);
     }
 .footer-social__list{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-
+    gap:1rem;
 }
 .social__link{
     width: 3.5rem;
     height: 3.5rem;
-    margin: 0 1rem;
-    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -421,16 +478,16 @@ body{
 
 
 .footer__right{
-    width: 50%;
+    width: 35%;
+    padding: 2rem;
 
 }
 .footer-right__header{
     width: 100%;
-    margin-top: 2rem;
+
 }
 .footer-right__title{
     text-align: center;
-    margin-bottom: 1rem;
 }
 .footer__form{
     width: 100%;
@@ -454,7 +511,7 @@ body{
     .form__container-name,
     .form__container-email,
     .form__container-mensaje{
-        width: 50%;
+        width: 70%;
         margin-top: 2.5rem;
         position: relative;
     }
@@ -463,7 +520,6 @@ body{
     height: 2.9rem;
     position: relative;
     display: block;
-    border: none;
     border: 1px solid var(--color-border-menu);
     background-color: transparent;  
     font-family:"Plus Jakarta Sans", Arial, Helvetica, sans-serif ;
@@ -494,25 +550,19 @@ body{
 
 .form__textarea{
     width: 100%;
-    height: 10rem;
+    height: 7.5rem;
     font-family:"Plus Jakarta Sans", Arial, Helvetica, sans-serif ;
     font-size: 1.2rem;
     font-weight: 600;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     color: var(--color-cuerpo);
-    border: none;
     border: 1px solid var(--color-border-menu);
     background: rgba(0, 0, 0, .025); 
 }
-
-.form__btn{
-    border: none;
-}
-
 .footer__bottom{
     width: 100%;
+    padding-top: 3rem;
     display: flex;
-    padding-top: 6.7rem;
     align-items: flex-end;
 
 }
@@ -524,7 +574,7 @@ body{
     display: inline-block;
     color: var(--color-cuerpo);
     font-family:"Plus Jakarta Sans", Arial, Helvetica, sans-serif ;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .copyright__text > a{
     display: inline-block;
@@ -539,7 +589,7 @@ body{
 }
 .flinks__title{
     font-family:"Plus Jakarta Sans", Arial, Helvetica, sans-serif ;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: all 300ms ease-in-out;
 }
 

@@ -1,7 +1,6 @@
 @font-face{/* elegimos la fuente que queremos en la web*/
     font-family: "Plus Jakarta Sans";
-    src: url('/PlusJakartaSans-Light.ttf') format('truetype');
-    font-weight: normal;
+    src: url('/assets/fonts/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Light.ttf') format('truetype');
     font-style: normal;
 }
 
