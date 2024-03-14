@@ -1,0 +1,180 @@
+@media (min-width:1600px){
+    .layout{
+        min-width: 1600px;
+    }
+}
+
+@media ( max-width: 1190px){
+    .service__img {
+        margin-right: 3.1rem;
+    }
+   
+}
+
+@media ( max-width: 1180px){
+    .service__img {
+        margin-right: 3rem;
+    }
+
+}
+
+@media ( max-width: 1150px){
+    .service__img {
+        margin-right: 5rem;
+    }
+    .services__list {
+        margin: 0rem 0;
+    }
+    .services__service {
+        width: 35%;
+        margin: 3rem 0;
+    }
+    .service-mora__container{
+        margin-top: 3rem;
+    }
+
+}
+
+@media ( max-width: 1090px){
+    .service__img {
+        margin-right: 4.4rem;
+    }
+    .gallery__image {
+        width: 55rem;
+    }
+    .container__btn-gallery {
+        width: 55rem;
+    }
+
+}
+@media ( max-width: 1000px) {
+    /*menu escritorio*/
+    .navbar__nav {
+        display: none;
+    }
+    /*productos*/
+    .product__category-container{
+        width: 25%;
+    }
+    .product__stocks-container {
+        width: 75%;
+        justify-content: space-around;
+    }
+    .product__stocks {
+        width: 45%;
+    }
+    /* footer*/
+    .layout__footer,
+    .fondo-footer{
+        height: 100%;
+    }
+    .footer__container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer__left {
+        width: 100%;
+        padding: 1rem;
+    }
+    .footer__right {
+        width: 40%;
+        padding: 1rem;
+    }
+    .form__container-name, .form__container-email, .form__container-mensaje{
+        width: 35rem;
+    }
+}
+@media ( max-width: 865px) {
+    /*servicios*/
+    .service__img {
+        margin-right: 4rem;
+    }
+    /*gallery*/
+    .gallery__image{
+        width: 45rem;
+        height: 30rem;
+    }
+    .container__btn-gallery {
+        width: 45rem;
+    }
+    /*productos*/
+   
+    /*footer*/
+    .footer__container {
+        padding: 0;
+    }
+}
+@media ( max-width: 800px){
+        /*servicios*/
+        .service__img {
+            margin-right: 3.5rem;
+        }
+        /*gallery*/
+    .gallery__image{
+        width: 40rem;
+    }
+    .container__btn-gallery {
+        width: 40rem;
+    }
+} 
+@media ( max-width: 700px){
+    /*servicios*/
+    .service__img {
+        margin-right: 2.9rem;
+    }
+    .product__category-container {
+        width: 27%;
+    }
+    /*footer*/
+    .footer__ltop{
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .footer__logo{
+        width: 50%;
+        justify-content: center;
+    }
+    .footer__logo-img {
+        width: 120px;
+    }
+    .footer__nav {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .footer__location, .footer__contact  {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .footer-location__header{
+        width: 100%;
+    }
+    .footer-location__title{
+        text-align: center;
+    }
+    .footer-location__content {
+        width: 100%;
+    }
+    .footer-location__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+} 
+@media ( max-width: 592px){
+    
+} 
+@media ( max-width: 350px){
+   
+}
