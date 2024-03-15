@@ -35,10 +35,11 @@ body{
 .layout__menu{
     font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
     width: 100%;
-    height: 50rem;
+    height: 62rem;/*acondicionamos de acuerdo al tamaño de la img*/
     padding: 2rem 1rem;
     background-image: url(/assets/img/banner-menu2.png);
     background-size: cover;
+    background-position: center;
 }
 
 .menu__header{
@@ -620,7 +621,7 @@ body{
 
     .register__form,
     .form__login{
-        width: 25%;
+        width: 30rem;
         height: 100%;
         padding: 1rem;
         background-color: rgba(255, 255, 255, 0.13);
@@ -763,7 +764,7 @@ body{
 }
 
 .modal-content {
-    width: 25%;
+    width: 30rem;
     height: 27rem;
     margin: 5% auto;
     padding: 1rem;
