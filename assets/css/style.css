@@ -65,7 +65,7 @@ body{
     transform: scale(1.2);
 }
 .navbar__nav{
-   width: 70%;
+   width: 80%;
 }
 .nav__list{
     width: 100%;
@@ -937,3 +937,4 @@ body{
     color: var(--color-border-menu);
     border-bottom: 1px solid var(--color-border-menu);
 }
+

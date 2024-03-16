@@ -28,8 +28,41 @@
                          <img src="./assets/img/logo4.png" class="navbar__logo-img">
                     </a>
                 </div>
-                <!--menu escritorio-->
+
+                <!--NAVBAR QUE CONTIENE AMBOS MENU RESPONSI Y ESCRITORIO-->
+                
                 <nav class="navbar__nav">
+
+                      <!-- BOTON RESPONSIVE -->
+
+                    <div class="navbar__mobile-btn-container">
+                        <i class="fa-solid fa-bars navbar__mobile-btn"></i>
+                    </div>
+
+                    <!-- elemento con submenu -->
+                    <ul class="nav-mobile__list">
+                        <li class="nav-mobile__item">
+                            <a href="./index.html" class="nav-mobile__title">Home</a>
+                        </li>
+    
+                        <li class="nav-mobile__item">
+                            <a href="#" class="nav-mobile__title">Turnos</a>
+                        </li>
+    
+                        <li class="nav-mobile__item">
+                            <a href="./products.html" class="nav-mobile__title">productos</a>
+                           
+                        </li>
+    
+                        <li class="nav-mobile__item">
+                            <a href="./register.html" class="nav-mobile__register">registrarse</a>
+                        </li>
+    
+                        <li class="nav-mobile__item">
+                            <a href="#" class="nav-mobile__title" id="openModal">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                    <!--MENU ESCRITOTIO-->
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="./index.html" class="nav__title">Home</a>
@@ -440,5 +473,6 @@
     </div>
     <script src="/assets/js/products.js"></script>
     <script src="/assets/js/login.js"></script>
+    <script src="/assets/js/menu.js"></script>
 </body>
 </html>
