@@ -121,18 +121,19 @@ body{
 
 /*SERVICE*/
 
-    .layout__servicio{
-        font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
-        width: 100%;
-        padding: 2rem 1rem;
-        background-color: var(--color-fondo);
-    }   
+.layout__servicio{
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: var(--color-fondo);
+}   
 
     .services__header,
     .gallery__heade,
     .products__header,
     .register__header,
-    .login__header{
+    .login__header,
+    .professional__header{
         width: 100%;
 
     }
@@ -141,7 +142,8 @@ body{
     .gallery__title,
     .products-header__title,
     .register__title,
-    .login__title-header{
+    .login__title-header,
+    .professional__title{
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 1.2rem;
@@ -949,3 +951,103 @@ body{
 
 /*webkit-text-stroke: 1px var(--primary-color);
 color: transparent;*/
+
+
+/*PROFESIONALES*/
+
+.layout__professional{
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: var(--color-fondo);
+}
+
+.container__professional{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.professional__cards{
+    width: 25%;
+    position: relative;
+}
+.professional__image{
+    position: relative;
+}
+.professional__img{
+    width: 100%;
+    height: auto;
+}
+.profesional__descriptions{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 800ms ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.profesional__descriptions:hover{
+    opacity: 1;
+}
+.professional-description__title{
+    width: 100%;
+    font-size: 2rem;
+    color: var(--color-hover);
+    text-shadow: 1px 2px 2px #101010;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem;
+}
+.professional-description__dates{
+    width: 100%;
+    font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+    color: var(--color-cuerpo);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: justify;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+.professional__list-social{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+}
+
+.professional__item-social{
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-border-menu);
+    color: var(--color-cuerpo);
+    transition: all 300ms ease-in-out;
+}
+.professional__item-social:hover{
+    background-color: var(--color-border-products);
+    color: var(--color-border-menu);
+}
+.profesional__link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.professional-description__icon{
+    font-size: 1.9rem;
+}
+
