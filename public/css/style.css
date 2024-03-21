@@ -1102,15 +1102,16 @@ color: transparent;*/
     text-align: left;
     padding: 0.5rem;
 }
-.productsDetail__price{
-    width: 100%;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: left;
-    color: var(--color-border-menu);
-    padding: 0.5rem;
-}
+    .productsDetail__price,
+    .productsDetail__stocks{
+        width: 100%;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        text-align: left;
+        color: var(--color-border-menu);
+        padding: 0.5rem;
+    }
 .productsDetail__btn{
     font-size: 2rem;
     text-transform: uppercase;
