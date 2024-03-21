@@ -23,3 +23,6 @@ app.get("/register", function (req,res){
 app.get("/login", function (req,res){
     res.sendFile(path.join(__dirname,"/views/login.html"))
 })
+app.get("/productsDetail", function (req,res){
+    res.sendFile(path.join(__dirname,"/views/productsDetail.html"))
+})

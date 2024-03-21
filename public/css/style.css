@@ -1052,3 +1052,79 @@ color: transparent;*/
     font-size: 1.9rem;
 }
 
+/*PRODUCTOS DETALLES*/
+
+.layout__productsDetail{
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: var(--color-fondo);
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+} 
+.productsDetail__conteiner{
+    width: 100%;
+    border: 1px solid var(--color-border-menu);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productsDetail__images{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.productsDetail__img{
+    width: 25rem;
+}
+.productsDetail__descriptions{
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+}
+.productsDetail__title{
+    width: 100%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: left;
+    color: var(--color-border-menu);
+    padding: 0.5rem;
+}
+.productsDetail__date{
+    width: 100%;
+    font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+    color: var(--color-fondo);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0.5rem;
+}
+.productsDetail__price{
+    width: 100%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: left;
+    color: var(--color-border-menu);
+    padding: 0.5rem;
+}
+.productsDetail__btn{
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    color: var(--color-cuerpo);
+    background-color: var(--color-border-menu);
+    transition: all 300ms ease-in-out;
+}
+.productsDetail__btn:hover{
+    color: var(--color-border-menu);
+    background-color: var(--color-cuerpo);
+    border: 1px solid var(--color-border-menu);
+}

@@ -28,63 +28,63 @@
                          <img src="./assets/img/logo4.png" class="navbar__logo-img">
                     </a>
                 </div>
-                 <!--NAVBAR QUE CONTIENE AMBOS MENU RESPONSI Y ESCRITO-->
 
+                <!--NAVBAR QUE CONTIENE AMBOS MENU RESPONSI Y ESCRITORIO-->
+                
                 <nav class="navbar__nav">
 
-                    <!-- BOTON RESPONSIVE -->
-    
+                      <!-- BOTON RESPONSIVE -->
+
                     <div class="navbar__mobile-btn-container">
                         <i class="fa-solid fa-bars navbar__mobile-btn"></i>
                     </div>
+
+                    <!-- menu mobile -->
+                    <ul class="nav-mobile__list">
+                        <li class="nav-mobile__item">
+                            <a href="/" class="nav-mobile__title">Home</a>
+                        </li>
     
-                        <!-- menu mobile-->
-                        <ul class="nav-mobile__list">
-                            <li class="nav-mobile__item">
-                                <a href="/" class="nav-mobile__title">Home</a>
-                            </li>
-        
-                            <li class="nav-mobile__item">
-                                <a href="#" class="nav-mobile__title">Turnos</a>
-                            </li>
-        
-                            <li class="nav-mobile__item">
-                                <a href="/products" class="nav-mobile__title">productos</a>
-                               
-                            </li>
-        
-                            <li class="nav-mobile__item-register">
-                                <a href="/register" class="nav-mobile__title-register">registrarse</a>
-                            </li>
-        
-                            <li class="nav-mobile__item">
-                                <a href="/login" class="nav-mobile__title" id="openModal">Iniciar Sesión</a>
-                            </li>
-                        </ul>
-                    <!--Menu Escritorio-->
-             
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="/" class="nav__title">Home</a>
-                            </li>
-        
-                            <li class="nav__item">
-                                <a href="#" class="nav__title">turnos</a>
-                            </li>
-        
-                            <li class="nav__item">
-                                <a href="/products" class="nav__title">productos</a>
-                            
-                            </li>
-        
-                            <li class="nav__item">
-                                <a href="/register" class="nav__register">registrarse</a>
-                            </li>
-        
-                            <li class="nav__item">
-                                <a href="/login" class="nav__title" id="openModal">Iniciar Sesión</a>
-                            </li>
-                        </ul>
+                        <li class="nav-mobile__item">
+                            <a href="#" class="nav-mobile__title">Turnos</a>
+                        </li>
+    
+                        <li class="nav-mobile__item">
+                            <a href="/products" class="nav-mobile__title">productos</a>
+                           
+                        </li>
+    
+                        <li class="nav-mobile__item-register">
+                            <a href="/register" class="nav-mobile__title-register">registrarse</a>
+                        </li>
+    
+                        <li class="nav-mobile__item">
+                            <a href="/login" class="nav-mobile__title" id="openModal">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                    <!--MENU ESCRITOTIO-->
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/" class="nav__title">Home</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="#" class="nav__title">turnos</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="/products" class="nav__title">productos</a>
+                           
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="/register" class="nav__register">registrarse</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="/login" class="nav__title" id="openModal">Iniciar Sesión</a>
+                        </li>
+                    </ul>
                 </nav>
             </header>
             
@@ -147,54 +147,67 @@
             </div>
 
         </section>
-        <!--REGRISTRO-->
-        <section class="layout__register">
 
-            <header class="register__header">
+        <!--PRODUCTOS-->
 
-                <h2 class="register__title">registrarse</h2>
+        <section class="layout__productsDetail">
+
+            <header class="products__header">
+
+                <h2 class="products-header__title">detalles productos</h2>
                 <div class="separador"></div>
 
             </header>
 
-            <div class="container__register">
+            <div class="products__product">
 
+                <div class="product__category-container">
+
+                    <h3 class="product__category-title">Categorías</h3>
+
+                    <ul class="product__list" id="categoryList">
+                        <!-- Aquí se cargarán las categorías dinámicamente -->
+                        <li class="product__item"><a href="#" class="product__link" >shampoos</a></li>
+
+                        <li class="product__item"><a href="#" class="product__link" >ceras</a></li>
+
+                        <li class="product__item"><a href="#" class="product__link" >fragancias</a></li>
+                        
+                    </ul>
+                    
+                </div>
                 
+                <div class="product__stocks-container" id="products">
+                    <!-- hasta class="product__stocks-container" incliuido use el mismo recurso que el products.HTML -->
+                    <div class="productsDetail__conteiner">
+
+                        <div class="productsDetail__images">
+
+                            <img class="productsDetail__img" src="assets/img/fragancia-1.png" alt="Producto 1">
+                            <img class="productsDetail__img" src="assets/img/fragancia-1.png"alt="Producto 1">
+                            <img class="productsDetail__img" src="assets/img/fragancia-1.png"alt="Producto 1">
+
+                        </div>
+
+                        <div class="productsDetail__descriptions">
+
+                            <h3 class="productsDetail__title">Nombre del Producto</h3>
+
+                            <p class="productsDetail__date">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusantium temporibus illo autem quo repudiandae minus, itaque ipsa consectetur maxime 
+                                impedit libero qui? Sequi labore delectus fugiat ab dolor laudantium. Explicabo?</p>
+                            <p class="productsDetail__price">Precio: $2.000</p>
+
+                            <button class="productsDetail__btn">Añadir al Carrito</button>
+
+                        </div>
+
+                      </div>
+                  
+                </div>
+
+            </div> 
                 
-                <form class="register__form">
-
-                    <div class="register-form__name">     
-                        <input type="text" name="name" id="name"required placeholder="nombre" class="form__input-register">
-                        <label for="name" class="form__label-register">nombre</label>
-                    </div>
-                    <div class="register-form__last-name">     
-                        <input type="text" name="last-name" id="last-name"required placeholder="apellido" class="form__input-register">
-                        <label for="last-name" class="form__label-register">apellido</label>
-                    </div>
-                    <div class="register-form__email">     
-                        <input type="email" name="email" id="email"required placeholder="email" class="form__input-register">
-                        <label for="email" class="form__label-register">email</label>
-                    </div>
-                    <div class="register-form__password">     
-                        <input type="password" name="password" id="password"required placeholder="contraseña" class="form__input-register">
-                        <label for="password" class="form__label-register">contraseña</label>
-                    </div>
-                    <div class="register-form__image">
-                        <input type="file" name="fotoRegister" accept=".jpg, .png, .jpeg, .gif" id="fotoRegister" class="form__input-fotoR">
-                        <label for="fotoRegister" class="form__label-fotoR">Foto de perfil</label>
-                    </div>
-                    <div class="register___container-btn">
-                        <button  class="register__button" type="submit">CREAR CUENTA</button>
-                    </div>
-                    <div class="registro-form__logins">
-                        <p class="logins__description">¿Ya tenés una cuenta?</p>
-                        <a class="logins__link" href="/login">Iniciá Sesión</a>
-                    </div>
-
-                </form>
-
-            </div>
-
         </section>
 
         <!--FOOTER-->
@@ -235,7 +248,7 @@
                                     </li>
                 
                                     <li class="footer-nav__item">
-                                        <a href="/login" class="footer-nav__title">inicio sesion</a>
+                                        <a href="/login" class="footer-nav__title">Iniciar Sesión</a>
                 
                                     </li>
                 
