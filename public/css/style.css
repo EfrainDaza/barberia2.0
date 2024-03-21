@@ -972,10 +972,11 @@ color: transparent;*/
     align-content: center;
 }
 .professional__cards{
-    width: 25%;
+    width: 30rem;
     position: relative;
 }
 .professional__image{
+    width: 100%;
     position: relative;
 }
 .professional__img{
