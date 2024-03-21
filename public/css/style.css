@@ -189,7 +189,7 @@ body{
     
 }
 .services__service{
-    width: 20%;
+    width: 25rem;
     padding: 1.5rem 0;
     border: 1px solid var(--color-border-menu);
     position: relative;
@@ -256,7 +256,7 @@ body{
 }
 
 .container__gallery{
-    width: 70%;
+    width: 75rem;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -972,7 +972,7 @@ color: transparent;*/
     align-content: center;
 }
 .professional__cards{
-    width: 30rem;
+    width: 35rem;
     position: relative;
 }
 .professional__image{
