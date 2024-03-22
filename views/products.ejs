@@ -103,126 +103,26 @@
                 
                 <div class="product__stocks-container" id="products">
                     <!-- Aquí se cargarán los productos dinámicamente -->
+                    <% productoList.forEach(producto => { %>
                     <article class="product__stocks" id="productList">
-
+                      
                         <div class="product__image">
                             <img class="product__img" src="./assets/img/fragancia-1.png" alt="product-stcoks">
                         </div>
                         <div class="product__description">
+                            
                             <h4 class="product__title-stocks">
-                                <a class="product__link-stocks" href="#">fragancia - spray</a>
+                                <a class="product__link-stocks" href="#"><%=producto.nombre%></a>
                             </h4>
                             <p class="product__etiquet-stocks">
                                 <a class="product__etiquet-link" href="/productsDetail">ver producto</a>
                             </p>
+                           
                         </div>
-                        
+                      
                     </article>
-                    <article class="product__stocks" id="productList">
-                        <div class="product__image">
-                            <img class="product__img" src="./assets/img/fragancia-2.png" alt="product-stcoks">
-                        </div>
-                        <div class="product__description">
-                            <h4 class="product__title-stocks">
-                                <a class="product__link-stocks" href="#">fragancia - millanel</a>
-                            </h4>
-                            <p class="product__etiquet-stocks">
-                                <a class="product__etiquet-link" href="/productsDetail">ver producto</a>
-                            </p>
-                        </div>
-                    </article>
-                    <article class="product__stocks" id="productList">
-                        <div class="product__image">
-                            <img class="product__img" src="./assets/img/fragancia-3.png" alt="product-stcoks">
-                        </div>
-                        <div class="product__description">
-                            <h4 class="product__title-stocks">
-                                <a class="product__link-stocks" href="#">fragancia - london</a>
-                            </h4>
-                            <p class="product__etiquet-stocks">
-                                <a class="product__etiquet-link" href="/productsDetail">ver producto</a>
-                            </p>
-                        </div>
-                    </article>
-                    <article class="product__stocks" id="productList">
-                        <div class="product__image">
-                            <img class="product__img" src="./assets/img/cera-1.png" alt="product-stcoks">
-                        </div>
-                        <div class="product__description">
-                            <h4 class="product__title-stocks">
-                                <a class="product__link-stocks" href="#">texturado - podwer</a>
-                            </h4>
-                            <p class="product__etiquet-stocks">
-                                <a class="product__etiquet-link" href="/productsDetail">ver producto</a>
-                            </p>
-                        </div>
-                    </article>
-                    <article class="product__stocks" id="productList">
-                        <div class="product__image">
-                            <img class="product__img" src="./assets/img/cera-2.png" alt="product-stcoks">
-                        </div>
-                        <div class="product__description">
-                            <h4 class="product__title-stocks">
-                                <a class="product__link-stocks" href="#">texturado - heavy</a>
-                            </h4>
-                            <p class="product__etiquet-stocks">
-                                <a class="product__etiquet-link" href="/productsDetail">ver producto</a>
-                            </p>
-                        </div>
-                    </article>
-                    <article class="product__stocks" id="productList">
-                        <div class="product__image">
-                            <img class="product__img" src="./assets/img/cera-3.png" alt="product-stcoks">
-                        </div>
-                        <div class="product__description">
-                            <h4 class="product__title-stocks">
-                                <a class="product__link-stocks" href="#">texturado - ossion</a>
-                            </h4>
-                            <p class="product__etiquet-stocks">
-                                <a class="product__etiquet-link" href="/productsDetail">ver producto</a>
-                            </p>
-                        </div>
-                    </article>
-                    <article class="product__stocks" id="productList">
-                        <div class="product__image">
-                            <img class="product__img" src="./assets/img/shampoo-1.png" alt="product-stcoks">
-                        </div>
-                        <div class="product__description">
-                            <h4 class="product__title-stocks">
-                                <a class="product__link-stocks" href="#">shampoo - anticaspas</a>
-                            </h4>
-                            <p class="product__etiquet-stocks">
-                                <a class="product__etiquet-link" href="/productsDetail">ver producto</a>
-                            </p>
-                        </div>
-                    </article>
-                    <article class="product__stocks" id="productList">
-                        <div class="product__image">
-                            <img class="product__img" src="./assets/img/shampoo-2.png" alt="product-stcoks">
-                        </div>
-                        <div class="product__description">
-                            <h4 class="product__title-stocks">
-                                <a class="product__link-stocks" href="#">shampoo - nutritivo</a>
-                            </h4>
-                            <p class="product__etiquet-stocks">
-                                <a class="product__etiquet-link" href="/productsDetail">ver producto</a>
-                            </p>
-                        </div>
-                    </article>
-                    <article class="product__stocks" id="productList">
-                        <div class="product__image">
-                            <img class="product__img" src="./assets/img/shampoo-3.png" alt="product-stcoks">
-                        </div>
-                        <div class="product__description">
-                            <h4 class="product__title-stocks">
-                                <a class="product__link-stocks" href="#">shampoo - pelo lasio</a>
-                            </h4>
-                            <p class="product__etiquet-stocks">
-                                <a class="product__etiquet-link" href="/productsDetail">ver producto</a>
-                            </p>
-                        </div>
-                    </article>
-
+                    <% }) %>
+                    
                 </div>
 
             </div> 

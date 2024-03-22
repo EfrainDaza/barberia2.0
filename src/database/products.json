@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nombre": "fragancia - spray",
+        "descripcion": "salsa negra",
+        "stocks":5,
+        "precio": "65.5"
+
+    },
+    {
+        "id": 2,
+        "nombre": "fragancia - millanel",
+        "descripcion": "salsa negra",
+        "stocks":6,
+        "precio": "65.5"
+
+    },
+    {
+        "id": 3,
+        "nombre": "fragancia - london",
+        "descripcion": "salsa negra",
+        "stocks":7,
+        "precio": "65.5"
+
+    },
+    {
+        "id": 4,
+        "nombre": "texturado - poder",
+        "descripcion": "salsa negra",
+        "stocks":8,
+        "precio": "65.5"
+
+    },
+    {
+        "id": 5,
+        "nombre": "texturado - heavy",
+        "descripcion": "salsa negra",
+        "stocks":9,
+        "precio": "65.5"
+
+    },
+    {
+        "id": 6,
+        "nombre": "texturado - ossion",
+        "descripcion": "salsa negra",
+        "stocks":10,
+        "precio": "65.5"
+
+    },
+    {
+        "id": 7,
+        "nombre": "shampoo - anticaspas",
+        "descripcion": "salsa negra",
+        "stocks":11,
+        "precio": "65.5"
+
+    },
+    {
+        "id": 8,
+        "nombre": "shampoo - nutritivo",
+        "descripcion": "salsa negra",
+        "stocks":12,
+        "precio": "65.5"
+
+    },
+    {
+        "id": 9,
+        "nombre": "shampoo - pelo lasio",
+        "descripcion": "salsa negra",
+        "stocks":13,
+        "precio": "65.5"
+
+    }
+]

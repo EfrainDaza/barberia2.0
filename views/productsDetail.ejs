@@ -10,7 +10,6 @@
 
             <!--header-->
             <%- include ("./partials/header") %>
-           
             
              <!--SLIDER AUTOMATICO-->
              <div class="layout__marquee">
@@ -115,13 +114,11 @@
 
                         <div class="productsDetail__descriptions">
 
-                            <h3 class="productsDetail__title">Nombre del Producto</h3>
+                            <h3 class="productsDetail__title"><%= producto.nombre %></h3>
 
-                            <p class="productsDetail__date">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Accusantium temporibus illo autem quo repudiandae minus, itaque ipsa consectetur maxime 
-                                impedit libero qui? Sequi labore delectus fugiat ab dolor laudantium. Explicabo?</p>
-                            <p class="productsDetail__stocks">stocks:5</p>
-                            <p class="productsDetail__price">Precio: $2.000</p>
+                            <p class="productsDetail__date"><%= producto.descripcion %></p>
+                            <p class="productsDetail__stocks"><%= producto.stocks %></p>
+                            <p class="productsDetail__price">Precio: $<%= producto.precio %></p>
 
                             <button class="productsDetail__btn">Añadir al Carrito</button>
 
