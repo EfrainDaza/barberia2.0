@@ -2,7 +2,7 @@
     {
         "id": 1,
         "nombre": "fragancia - spray",
-        "descripcion": "salsa negra",
+        "descripcion": "salsa negra1",
         "stocks":5,
         "precio": "65.5"
 
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "nombre": "fragancia - millanel",
-        "descripcion": "salsa negra",
+        "descripcion": "salsa negra2",
         "stocks":6,
         "precio": "65.5"
 
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "nombre": "fragancia - london",
-        "descripcion": "salsa negra",
+        "descripcion": "salsa negra3",
         "stocks":7,
         "precio": "65.5"
 
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "nombre": "texturado - poder",
-        "descripcion": "salsa negra",
+        "descripcion": "salsa negra4",
         "stocks":8,
         "precio": "65.5"
 
@@ -34,7 +34,7 @@
     {
         "id": 5,
         "nombre": "texturado - heavy",
-        "descripcion": "salsa negra",
+        "descripcion": "salsa negra5",
         "stocks":9,
         "precio": "65.5"
 
@@ -42,7 +42,7 @@
     {
         "id": 6,
         "nombre": "texturado - ossion",
-        "descripcion": "salsa negra",
+        "descripcion": "salsa negra6",
         "stocks":10,
         "precio": "65.5"
 
@@ -50,7 +50,7 @@
     {
         "id": 7,
         "nombre": "shampoo - anticaspas",
-        "descripcion": "salsa negra",
+        "descripcion": "salsa negra7",
         "stocks":11,
         "precio": "65.5"
 
@@ -58,7 +58,7 @@
     {
         "id": 8,
         "nombre": "shampoo - nutritivo",
-        "descripcion": "salsa negra",
+        "descripcion": "salsa negra8",
         "stocks":12,
         "precio": "65.5"
 
@@ -66,7 +66,7 @@
     {
         "id": 9,
         "nombre": "shampoo - pelo lasio",
-        "descripcion": "salsa negra",
+        "descripcion": "salsa negra9",
         "stocks":13,
         "precio": "65.5"
 

@@ -11,5 +11,7 @@ router.get("/login", controller.login)
 router.get("/products", controller.products)
 //consulta de productos con sus detalles/id:
 router.get("/productsDetail/:id", controller.Detalle)
+//crear o dar alta producto
+router.get("/products/create", controller.create)
 
 module.exports = router;

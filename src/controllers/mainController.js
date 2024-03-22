@@ -23,6 +23,9 @@ const controller = {
         const productoEcontrado = producto.find(row =>row.id == req.params.id)
         if(productoEcontrado && productoEcontrado.borrado != true) return res.render("productsDetail", {producto:productoEcontrado})
         else return res.send("PRODUCTO NO ENCONTRADO 404")
+    },
+    create:(req,res) => {
+        return res.render("createProducts")
     }
     
 

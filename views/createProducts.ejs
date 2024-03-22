@@ -71,63 +71,51 @@
 
         </section>
 
-        <!--PRODUCTOS-->
+        <!--CREAR PRODUCTOS-->
 
-        <section class="layout__productsDetail">
+        <section class="layout__createProducts">
 
             <header class="products__header">
 
-                <h2 class="products-header__title">detalles productos</h2>
+                <h2 class="products-header__title">crear productos</h2>
                 <div class="separador"></div>
 
             </header>
 
-            <div class="products__product">
+            <div class="conteiner___createProducts">
 
-                <div class="product__category-container">
+                <form method="POST" action="/products" class="form__createProdcuts" enctype="multipart/form-data">
 
-                    <h3 class="product__category-title">Categorías</h3>
+                    <div class="createProdcuts__name">
+                        <input type="text" name="nameProduct" placeholder="nombre">
+                        <label for="nameProduct">nombre</label>
+                    </div>
 
-                    <ul class="product__list" id="categoryList">
-                        <!-- Aquí se cargarán las categorías dinámicamente -->
-                        <li class="product__item"><a href="#" class="product__link" >shampoos</a></li>
+                    <div class="createProdcuts__description">
+                        <input type="text" name="descripcionProduct" placeholder="descripcion">
+                        <label for="descripcionProduct">descripcion</label>
+                    </div>
 
-                        <li class="product__item"><a href="#" class="product__link" >ceras</a></li>
+                    <div class="createProdcuts__stocks">
+                        <input type="number" name="stockProduct" placeholder="stocks">
+                        <label for="stockProduct">stocks</label>
+                    </div>
 
-                        <li class="product__item"><a href="#" class="product__link" >fragancias</a></li>
-                        
-                    </ul>
+                    <div class="createProdcuts__price">
+                        <input type="number" name="priceProduct" placeholder="precio">
+                        <label for="priceProduct">precio</label>
+                    </div>
+
+                    <div class="createProdcuts__image">
+                        <input type="file" name="imgProduct" accept=".jpg, .png, .gif">
+                        <label for="imgProduct">foto producto</label>
+                    </div>
+                    <div class="createProdcuts___container-btn">
+                        <button  class="createProdcuts__button" type="submit">alta producto</button>
+                    </div>
                     
-                </div>
+                </form>
                 
-                <div class="product__stocks-container" id="products">
-                    <!-- hasta class="product__stocks-container" incliuido use el mismo recurso que el products.HTML -->
-                    <div class="productsDetail__conteiner">
-
-                        <div class="productsDetail__images">
-
-                            <img class="productsDetail__img" src="assets/img/fragancia-1.png" alt="Producto 1">
-                            <img class="productsDetail__img" src="assets/img/fragancia-1.png"alt="Producto 2">
-                            <img class="productsDetail__img" src="assets/img/fragancia-1.png"alt="Producto 3">
-
-                        </div>
-
-                        <div class="productsDetail__descriptions">
-
-                            <h3 class="productsDetail__title"><%= producto.nombre %></h3>
-
-                            <p class="productsDetail__date"><%= producto.descripcion %></p>
-                            <p class="productsDetail__stocks">stocks: <%=producto.stocks %></p>
-                            <p class="productsDetail__price">Precio: $<%= producto.precio %></p>
-
-                            <button class="productsDetail__btn">Añadir al Carrito</button>
-
-                        </div>
-
-                      </div>
-                  
-                </div>
-
             </div> 
                 
         </section>
