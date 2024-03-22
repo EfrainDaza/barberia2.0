@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--head-->
+<%- include ("./partials/head") %>
+<body>
+    <div class="layout">
+
+        <!--MENU-->
+        <section class="layout__menu">
+
+            <header class="menu__header">
+
+                <div class="navbar__logo">
+                    <a href="/" class="navbar__link-logo">
+                         <img src="./assets/img/logo4.png" class="navbar__logo-img">
+                    </a>
+                </div>
+                 <!--NAVBAR QUE CONTIENE AMBOS MENU RESPONSI Y ESCRITO-->
+
+                <nav class="navbar__nav">
+
+                    <!-- BOTON RESPONSIVE -->
+    
+                    <div class="navbar__mobile-btn-container">
+                        <i class="fa-solid fa-bars navbar__mobile-btn"></i>
+                    </div>
+    
+                        <!-- menu mobile-->
+                        <ul class="nav-mobile__list">
+                            <li class="nav-mobile__item">
+                                <a href="/" class="nav-mobile__title">Home</a>
+                            </li>
+        
+                            <li class="nav-mobile__item">
+                                <a href="#" class="nav-mobile__title">Turnos</a>
+                            </li>
+        
+                            <li class="nav-mobile__item">
+                                <a href="/products" class="nav-mobile__title">productos</a>
+                               
+                            </li>
+        
+                            <li class="nav-mobile__item-register">
+                                <a href="/register" class="nav-mobile__title-register">registrarse</a>
+                            </li>
+        
+                            <li class="nav-mobile__item">
+                                <a href="/login" class="nav-mobile__title" id="openModal">Iniciar Sesión</a>
+                            </li>
+                        </ul>
+                    <!--Menu Escritorio-->
+             
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="/" class="nav__title">Home</a>
+                            </li>
+        
+                            <li class="nav__item">
+                                <a href="#" class="nav__title">turnos</a>
+                            </li>
+        
+                            <li class="nav__item">
+                                <a href="/products" class="nav__title">productos</a>
+                            
+                            </li>
+        
+                            <li class="nav__item">
+                                <a href="/register" class="nav__register">registrarse</a>
+                            </li>
+        
+                            <li class="nav__item">
+                                <a href="/login" class="nav__title" id="openModal">Iniciar Sesión</a>
+                            </li>
+                        </ul>
+                </nav>
+            </header>
+            
+             <!--SLIDER AUTOMATICO-->
+             <div class="layout__marquee">
+
+                <div class="marquee__container">
+
+                    <ul class="marquee__list">
+
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Transformación masculina -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link-w">- Corte de cabello con precisión -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Estilo sin igual -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Transformación masculina -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link-w">- Corte de cabello con precisión -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Estilo sin igual -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Transformación masculina -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link-w">- Corte de cabello con precisión -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Estilo sin igual -</a>
+                            </h4>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!--REGRISTRO-->
+        <section class="layout__register">
+
+            <header class="register__header">
+
+                <h2 class="register__title">registrarse</h2>
+                <div class="separador"></div>
+
+            </header>
+
+            <div class="container__register">
+
+                
+                
+                <form class="register__form">
+
+                    <div class="register-form__name">     
+                        <input type="text" name="name" id="name"required placeholder="nombre" class="form__input-register">
+                        <label for="name" class="form__label-register">nombre</label>
+                    </div>
+                    <div class="register-form__last-name">     
+                        <input type="text" name="last-name" id="last-name"required placeholder="apellido" class="form__input-register">
+                        <label for="last-name" class="form__label-register">apellido</label>
+                    </div>
+                    <div class="register-form__email">     
+                        <input type="email" name="email" id="email"required placeholder="email" class="form__input-register">
+                        <label for="email" class="form__label-register">email</label>
+                    </div>
+                    <div class="register-form__password">     
+                        <input type="password" name="password" id="password"required placeholder="contraseña" class="form__input-register">
+                        <label for="password" class="form__label-register">contraseña</label>
+                    </div>
+                    <div class="register-form__image">
+                        <input type="file" name="fotoRegister" accept=".jpg, .png, .jpeg, .gif" id="fotoRegister" class="form__input-fotoR">
+                        <label for="fotoRegister" class="form__label-fotoR">Foto de perfil</label>
+                    </div>
+                    <div class="register___container-btn">
+                        <button  class="register__button" type="submit">CREAR CUENTA</button>
+                    </div>
+                    <div class="registro-form__logins">
+                        <p class="logins__description">¿Ya tenés una cuenta?</p>
+                        <a class="logins__link" href="/login">Iniciá Sesión</a>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!--FOOTER-->
+
+        <%- include ("./partials/footer") %>
+
+    </div>
+    <script src="/js/galeria.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/marquee.js"></script>
+</body>
+</html>

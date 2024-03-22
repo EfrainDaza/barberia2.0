@@ -1,15 +1,16 @@
 {
   "name": "barber2.0",
   "version": "1.0.0",
-  "description": "La pagina web en desarrollo es de una barberia de primera linea" ,
+  "description": "La pagina web en desarrollo es de una barberia de primera linea",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "test": "nodemon ./src/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.9",
     "express": "^4.18.3",
     "nodemon": "^3.1.0"
   }

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--head-->
+<%- include ("./partials/head") %>
+<body>
+    <div class="layout">
+
+        <!--MENU-->
+        <section class="layout__menu">
+
+            <header class="menu__header">
+
+                <div class="navbar__logo">
+                    <a href="/" class="navbar__link-logo">
+                         <img src="./assets/img/logo4.png" class="navbar__logo-img">
+                    </a>
+                </div>
+
+                <!--NAVBAR QUE CONTIENE AMBOS MENU RESPONSI Y ESCRITORIO-->
+                
+                <nav class="navbar__nav">
+
+                      <!-- BOTON RESPONSIVE -->
+
+                    <div class="navbar__mobile-btn-container">
+                        <i class="fa-solid fa-bars navbar__mobile-btn"></i>
+                    </div>
+
+                    <!-- menu mobile -->
+                    <ul class="nav-mobile__list">
+                        <li class="nav-mobile__item">
+                            <a href="/" class="nav-mobile__title">Home</a>
+                        </li>
+    
+                        <li class="nav-mobile__item">
+                            <a href="#" class="nav-mobile__title">Turnos</a>
+                        </li>
+    
+                        <li class="nav-mobile__item">
+                            <a href="/products" class="nav-mobile__title">productos</a>
+                           
+                        </li>
+    
+                        <li class="nav-mobile__item-register">
+                            <a href="/register" class="nav-mobile__title-register">registrarse</a>
+                        </li>
+    
+                        <li class="nav-mobile__item">
+                            <a href="/login" class="nav-mobile__title" id="openModal">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                    <!--MENU ESCRITOTIO-->
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/" class="nav__title">Home</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="#" class="nav__title">turnos</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="/products" class="nav__title">productos</a>
+                           
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="/register" class="nav__register">registrarse</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="/login" class="nav__title" id="openModal">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            
+             <!--SLIDER AUTOMATICO-->
+             <div class="layout__marquee">
+
+                <div class="marquee__container">
+
+                    <ul class="marquee__list">
+
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Transformación masculina -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link-w">- Corte de cabello con precisión -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Estilo sin igual -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Transformación masculina -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link-w">- Corte de cabello con precisión -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Estilo sin igual -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Transformación masculina -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link-w">- Corte de cabello con precisión -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Estilo sin igual -</a>
+                            </h4>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--PRODUCTOS-->
+
+        <section class="layout__productsDetail">
+
+            <header class="products__header">
+
+                <h2 class="products-header__title">detalles productos</h2>
+                <div class="separador"></div>
+
+            </header>
+
+            <div class="products__product">
+
+                <div class="product__category-container">
+
+                    <h3 class="product__category-title">Categorías</h3>
+
+                    <ul class="product__list" id="categoryList">
+                        <!-- Aquí se cargarán las categorías dinámicamente -->
+                        <li class="product__item"><a href="#" class="product__link" >shampoos</a></li>
+
+                        <li class="product__item"><a href="#" class="product__link" >ceras</a></li>
+
+                        <li class="product__item"><a href="#" class="product__link" >fragancias</a></li>
+                        
+                    </ul>
+                    
+                </div>
+                
+                <div class="product__stocks-container" id="products">
+                    <!-- hasta class="product__stocks-container" incliuido use el mismo recurso que el products.HTML -->
+                    <div class="productsDetail__conteiner">
+
+                        <div class="productsDetail__images">
+
+                            <img class="productsDetail__img" src="assets/img/fragancia-1.png" alt="Producto 1">
+                            <img class="productsDetail__img" src="assets/img/fragancia-1.png"alt="Producto 1">
+                            <img class="productsDetail__img" src="assets/img/fragancia-1.png"alt="Producto 1">
+
+                        </div>
+
+                        <div class="productsDetail__descriptions">
+
+                            <h3 class="productsDetail__title">Nombre del Producto</h3>
+
+                            <p class="productsDetail__date">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusantium temporibus illo autem quo repudiandae minus, itaque ipsa consectetur maxime 
+                                impedit libero qui? Sequi labore delectus fugiat ab dolor laudantium. Explicabo?</p>
+                            <p class="productsDetail__stocks">stocks:5</p>
+                            <p class="productsDetail__price">Precio: $2.000</p>
+
+                            <button class="productsDetail__btn">Añadir al Carrito</button>
+
+                        </div>
+
+                      </div>
+                  
+                </div>
+
+            </div> 
+                
+        </section>
+
+        <!--FOOTER-->
+
+        <%- include ("./partials/footer") %>
+
+    </div>
+    <script src="/js/galeria.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/marquee.js"></script>
+</body>
+</html>
