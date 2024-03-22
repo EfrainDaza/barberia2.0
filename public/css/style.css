@@ -67,6 +67,7 @@ body{
 }
 .navbar__nav{
    width: 80%;
+   position: relative;
 }
 .nav__list{
     width: 100%;
