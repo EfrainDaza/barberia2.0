@@ -75,40 +75,40 @@
 
         <section class="layout__createProducts">
 
-            <header class="products__header">
+            <header class="createProducts__header">
 
-                <h2 class="products-header__title">crear productos</h2>
+                <h2 class="createProducts-header__title">crear productos</h2>
                 <div class="separador"></div>
 
             </header>
 
-            <div class="conteiner___createProducts">
+            <div class="conteiner___createProducts"> 
 
                 <form method="POST" action="/products" class="form__createProdcuts" enctype="multipart/form-data">
 
                     <div class="createProdcuts__name">
-                        <input type="text" name="nameProduct" placeholder="nombre">
-                        <label for="nameProduct">nombre</label>
+                        <input type="text" name="nameProduct" placeholder="nombre" class="createP__input">
+                        <label for="nameProduct" class="createP__label">nombre</label>
                     </div>
 
                     <div class="createProdcuts__description">
-                        <input type="text" name="descripcionProduct" placeholder="descripcion">
-                        <label for="descripcionProduct">descripcion</label>
+                        <textarea name="mensaje" rows="10" required placeholder="Mensaje" class="form__textarea-Create createP__input"></textarea>
+                        <label for="descripcionProduct" class="createP__label">descripcion</label>
                     </div>
 
                     <div class="createProdcuts__stocks">
-                        <input type="number" name="stockProduct" placeholder="stocks">
-                        <label for="stockProduct">stocks</label>
+                        <input type="number" name="stockProduct" placeholder="stocks" class="createP__input">
+                        <label for="stockProduct" class="createP__label">stocks</label>
                     </div>
 
                     <div class="createProdcuts__price">
-                        <input type="number" name="priceProduct" placeholder="precio">
-                        <label for="priceProduct">precio</label>
+                        <input type="number" name="priceProduct" placeholder="precio" class="createP__input">
+                        <label for="priceProduct" class="createP__label">precio</label>
                     </div>
 
                     <div class="createProdcuts__image">
-                        <input type="file" name="imgProduct" accept=".jpg, .png, .gif">
-                        <label for="imgProduct">foto producto</label>
+                        <input type="file" name="imgProduct" accept=".jpg, .png, .gif" class="createP__input-img">
+                        <label for="imgProduct" class="createP__label-img">foto producto</label>
                     </div>
                     <div class="createProdcuts___container-btn">
                         <button  class="createProdcuts__button" type="submit">alta producto</button>

@@ -134,7 +134,8 @@ body{
     .products__header,
     .register__header,
     .login__header,
-    .professional__header{
+    .professional__header,
+    .createProducts__header{
         width: 100%;
 
     }
@@ -144,7 +145,8 @@ body{
     .products-header__title,
     .register__title,
     .login__title-header,
-    .professional__title{
+    .professional__title,
+    .createProducts-header__title{
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 1.2rem;
@@ -292,7 +294,8 @@ body{
     .service__more,
     .nav__register,
     .register__button,
-    .login-form__btn{
+    .login-form__btn,
+    .createProdcuts__button{
         font-size: 2rem;
         text-transform: uppercase;
         letter-spacing: 0.2rem;
@@ -307,7 +310,8 @@ body{
     .form__btn:hover,
     .service__more:hover,
     .register__button:hover,
-    .login-form__btn:hover{
+    .login-form__btn:hover,
+    .createProdcuts__button:hover{
         color: var(--color-border-menu);
         background-color:var(--color-cuerpo);
     }
@@ -626,7 +630,8 @@ body{
 
 
     .register__form,
-    .form__login{
+    .form__login,
+    .form__createProdcuts{
         width: 30rem;
         height: 100%;
         padding: 1rem;
@@ -642,7 +647,8 @@ body{
         transition: all 300ms ease-in-out;
     }
     .register-form__name,
-    .login-form__name{
+    .login-form__name,
+    .createProdcuts__name{
         width: 90%;
         position: relative;
         margin-top: 1.4rem;
@@ -651,28 +657,35 @@ body{
     .register-form__last-name,
     .register-form__password,
     .register-form__image,
-    .login-form__password{
+    .login-form__password,
+    .createProdcuts__description,
+    .createProdcuts__stocks,
+    .createProdcuts__price,
+    .createProdcuts__image{
         width: 90%;
         height: auto;
         position: relative;
         margin-top: 1.5rem;
     }
-.form__input-fotoR{ 
-    width: 100%;
-    font-size: 1rem;
-    font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    color: var(--color-cuerpo);
-}
-.form__label-fotoR{
-    width: 100%;
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
-    color: var(--color-cuerpo);
-    text-transform: uppercase;
-}
+    .form__input-fotoR,
+    .createP__input-img{ 
+        width: 100%;
+        font-size: 0.9rem;
+        font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        color: var(--color-cuerpo);
+    }
+    .form__label-fotoR,
+    .createP__label-img{
+        width: 100%;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        color: var(--color-cuerpo);
+        text-transform: uppercase;
+    }
     .form__input-register,
-    .form__input-login{
+    .form__input-login,
+    .createP__input{
         width: 100%;
         height: 2.9rem;
         font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
@@ -687,11 +700,13 @@ body{
         transition: all 300ms ease;
     }
     .form__input-register:hover,
-    .form__input-login:hover{
+    .form__input-login:hover,
+    .createP__input:hover{
         border: 1px solid var(--color-cuerpo);
     }
     .form__label-register,
-    .form__label-login{
+    .form__label-login,
+    .createP__label{
         width: 100%;
         font-size: 2rem;
         position: absolute;
@@ -704,17 +719,21 @@ body{
         transition: all 300ms ease-in-out;
     }
     .form__input-register::-webkit-input-placeholder,
-    .form__input-login::-webkit-input-placeholder{
+    .form__input-login::-webkit-input-placeholder,
+    .createP__input::-webkit-input-placeholder{
         color: transparent;
     }
     .form__input-register::-moz-placeholder,
-    .form__input-login::-moz-placeholder{
+    .form__input-login::-moz-placeholder,
+    .createP__input::-moz-placeholder{
         color: transparent;
     }
     .form__input-register:focus~label,
     .form__input-register:not(:placeholder-shown)~label,
     .form__input-login:focus~label,
-    .form__input-login:not(:placeholder-shown)~label{
+    .form__input-login:not(:placeholder-shown)~label,
+    .createP__input:focus~label,
+    .createP__input:not(:placeholder-shown)~label{
         top: -2rem;
         left: 0;
         z-index: 1;
@@ -1129,4 +1148,37 @@ color: transparent;*/
     color: var(--color-border-menu);
     background-color: var(--color-cuerpo);
     border: 1px solid var(--color-border-menu);
+}
+
+/*ALTA DE PRODUCTOS*/
+
+.layout__createProducts{
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: var(--color-fondo);
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+}
+.conteiner___createProducts{
+    width: 100%;
+    height: 50rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__textarea-Create{
+    width: 100%;
+    height: 20rem;
+    font-family:"Plus Jakarta Sans", Arial, Helvetica, sans-serif ;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    color: var(--color-cuerpo);
+    border: 1px solid var(--color-border-menu);
+}
+.createProdcuts___container-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
 }
