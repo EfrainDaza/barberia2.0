@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--head-->
+<%- include ("./partials/head") %>
+<body>
+    <div class="layout">
+
+        <!--MENU-->
+        <section class="layout__menu">
+
+            <!--header-->
+            <%- include ("./partials/header") %>
+            
+             <!--SLIDER AUTOMATICO-->
+             <div class="layout__marquee">
+
+                <div class="marquee__container">
+
+                    <ul class="marquee__list">
+
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Transformación masculina -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link-w">- Corte de cabello con precisión -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Estilo sin igual -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Transformación masculina -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link-w">- Corte de cabello con precisión -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Estilo sin igual -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Transformación masculina -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link-w">- Corte de cabello con precisión -</a>
+                            </h4>
+                        </li>
+                        <li class="marquee__item">
+                            <h4 class="marquee__title">
+                                <a href="#" class="marquee__link">- Estilo sin igual -</a>
+                            </h4>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--CREAR PRODUCTOS-->
+
+        <section class="layout__createProducts">
+
+            <header class="createProducts__header">
+
+                <h2 class="createProducts-header__title"> editar de productos</h2>
+                <div class="separador"></div>
+
+            </header>
+
+            <div class="conteiner___createProducts"> 
+
+                <form method="POST" action="/products/<%= producto.id %>?_method=PUT" class="form__createProdcuts">
+
+                    <div class="createProdcuts__name">
+                        <!--El elemento <textarea> en HTML no tiene un atributo value -->
+                        <input type="text" name="nameProduct" placeholder="nombre" class="createP__input" value="<%= producto.nombre %>">
+                        <label for="nameProduct" class="createP__label">nombre</label>
+                    </div>
+
+                    <div class="createProdcuts__description">
+                        <textarea name="descriptions" rows="10" required placeholder="descripcion" class="form__textarea-Create createP__input" ><%= producto.descripcion %></textarea>
+                        <label for="descripcionProduct" class="createP__label">descripcion</label>
+                    </div>
+
+                    <div class="createProdcuts__stocks">
+                        <input type="number" name="stockProduct" placeholder="stocks" class="createP__input" value="<%= producto.stocks %>">
+                        <label for="stockProduct" class="createP__label">stocks</label>
+                    </div>
+
+                    <div class="createProdcuts__price">
+                        <input type="number" name="priceProduct" placeholder="precio" class="createP__input" value="<%= producto.precio %>">
+                        <label for="priceProduct" class="createP__label">precio</label>
+                    </div>
+
+                    <div class="createProdcuts__image">
+                        <!--muestra los nombres de las img NO LAS ELIMINA-->
+                        <% producto.fotosProductos.forEach(function(image) { %>
+                            <div><%= image %></div>
+                          <% }); %>
+                          <!--no tiene valor value el input de type:file-->
+                        <input type="file" name="imgProduct" accept=".jpg, .png, .gif" class="createP__input-img"  multiple maxlength="3">
+                        <label for="imgProduct" class="createP__label-img">fotos producto - max. 3 img</label>
+                    </div>
+                    <div class="createProdcuts___container-btn">
+                        <button  class="createProdcuts__button" type="submit">Editar producto</button> 
+                    </div>
+                    <form method="POST" action="/products/<%= producto.id %>?_method=DELETE">
+                        <div class="createProdcuts___container-btn">
+                            <button  class="createProdcuts__button" type="submit">Eliminar producto</button> 
+                        </div>
+                    </form>
+                </form>
+                
+            </div> 
+                
+        </section>
+
+        <!--FOOTER-->
+
+        <%- include ("./partials/footer") %>
+
+    </div>
+    <script src="/js/galeria.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/marquee.js"></script>
+</body>
+</html>

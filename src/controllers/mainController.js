@@ -48,7 +48,28 @@ const controller = {
         fs.writeFileSync(rutaArchivo,JSON.stringify([...producto,altaProducts],null,2),"utf-8")
         return res.redirect("/products/create")
     },
-    
+    edit:(req,res) => {
+        const productoEcontrado = producto.find(row => row.id == req.params.id)
+        if(productoEcontrado) return res.render("editProducts",{producto:productoEcontrado})
+        else return res.send("PRODUCTO NO ENCOTRADO 404")
+    },
+    editProcess:(req,res) => {
+        const productoEditado = producto.find(row => row.id == req.params.id)
+        productoEditado.nombre = req.body.nameProduct,
+        productoEditado.descripcion = req.body.descriptions,
+        productoEditado.stocks = req.body.stockProduct,
+        productoEditado.precio = req.body.priceProduct
+
+        fs.writeFileSync(rutaArchivo,JSON.stringify(producto,null,2),"utf-8")
+        return res.redirect("/")
+    },
+    eliminarProducts: (req,res) => {
+        const porductoEliminado = producto.find(row => row.id == req.params.id)
+        porductoEliminado.borrado = true;
+
+        fs.writeFileSync(rutaArchivo,JSON.stringify(producto,null,2),"utf-8")
+        return res.redirect("/")
+    }
 
 }
 module.exports = controller; 

@@ -11,7 +11,8 @@ const multerDiskStorage = multer.diskStorage({
     filename: function(req,file,cb){
         let imageName = Date.now() + path.extname(file.originalname);
         cb(null,imageName)
-    }
+    },
+    limits: { files: 3 }
 });
 const fileUpload = multer({storage:multerDiskStorage});
 
@@ -26,5 +27,11 @@ router.get("/productsDetail/:id", controller.Detalle)
 router.get("/products/create", controller.create)
 //proceso de alta POST
 router.post("/products",fileUpload.array("imgProduct",3),controller.processCreate)
+//producto para editar
+router.get("/editProducts/edit/:id",controller.edit)
+//editar producto
+router.put("/products/:id",controller.editProcess)
+//eliminado de producto
+router.delete("/products/:id",controller.eliminarProducts)
 
 module.exports = router;
