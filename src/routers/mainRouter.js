@@ -25,6 +25,6 @@ router.get("/productsDetail/:id", controller.Detalle)
 //crear o dar alta producto
 router.get("/products/create", controller.create)
 //proceso de alta POST
-router.post("/products",fileUpload.single("imgProduct"),controller.processCreate)
+router.post("/products",fileUpload.array("imgProduct",3),controller.processCreate)
 
 module.exports = router;

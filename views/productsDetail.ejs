@@ -104,22 +104,22 @@
                     <!-- hasta class="product__stocks-container" incliuido use el mismo recurso que el products.HTML -->
                     <div class="productsDetail__conteiner">
 
-                        <div class="productsDetail__images">
-
-                            <img class="productsDetail__img" src="/assets/img/<%= producto.fotosProductos %>" alt="Producto 1">
-                            <img class="productsDetail__img" src="/assets/img/<%= producto.fotosProductos %>"alt="Producto 2">
-                            <img class="productsDetail__img" src="/assets/img/<%= producto.fotosProductos %>"alt="Producto 3">
+                        <div class="productsDetail__images">    
+                            <!--hicomos un bucle para que recorra las img del array-->
+                            <% producto.fotosProductos.forEach(function(foto) { %>
+                                <img class="productsDetail__img" src="/assets/img/<%= foto %>" alt="Producto 1">
+                            <% }); %>
 
                         </div>
 
                         <div class="productsDetail__descriptions">
-
+                            
                             <h3 class="productsDetail__title"><%= producto.nombre %></h3>
 
                             <p class="productsDetail__date"><%= producto.descripcion %></p>
                             <p class="productsDetail__stocks">stocks: <%=producto.stocks %></p>
                             <p class="productsDetail__price">Precio: $<%= producto.precio %></p>
-
+                       
                             <button class="productsDetail__btn">Añadir al Carrito</button>
 
                         </div>

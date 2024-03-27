@@ -34,8 +34,15 @@ const controller = {
             "descripcion":req.body.descriptions,
             "stocks":req.body.stockProduct,
             "precio":req.body.priceProduct,
-            "fotosProductos":req.file.filename,
+            "fotosProductos":[],
             "borrado":false
+        }
+            // Si hay archivos adjuntos (imágenes), procesarlos
+        if (req.files && req.files.length > 0) {
+            // Agregar los nombres de los archivos al producto
+            req.files.forEach(file => {
+                altaProducts.fotosProductos.push(file.filename);
+            });
         }
         fs.writeFileSync(rutaArchivo,JSON.stringify([...producto,altaProducts],null,2),"utf-8")
         return res.redirect("/products/create")
