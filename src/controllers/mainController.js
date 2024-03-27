@@ -26,7 +26,20 @@ const controller = {
     },
     create:(req,res) => {
         return res.render("createProducts")
-    }
+    },
+    processCreate:(req,res) => {
+        let altaProducts = {
+            "id": producto.length+1,
+            "nombre":req.body.nameProduct,
+            "descripcion":req.body.descriptions,
+            "stocks":req.body.stockProduct,
+            "precio":req.body.priceProduct,
+            "fotosProductos":req.file.filename,
+            "borrado":false
+        }
+        fs.writeFileSync(rutaArchivo,JSON.stringify([...producto,altaProducts],null,2),"utf-8")
+        return res.redirect("/products/create")
+    },
     
 
 }
