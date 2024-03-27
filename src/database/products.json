@@ -261,5 +261,43 @@
       "1711521112155.jpg"
     ],
     "borrado": false
+  },
+  {
+    "id": 28,
+    "nombre": "con msj",
+    "descripcion": "swjakjhdajhkhj",
+    "stocks": "65656",
+    "precio": "59889",
+    "fotosProductos": [
+      "1711521629011.jpg",
+      "1711521629034.jpg",
+      "1711521629047.jpg"
+    ],
+    "borrado": false
+  },
+  {
+    "id": 29,
+    "nombre": "asdas",
+    "descripcion": "asdasdas",
+    "stocks": "96968",
+    "precio": "898698",
+    "fotosProductos": [
+      "1711521771749.JPG",
+      "1711521771751.jpg",
+      "1711521771763.jpg"
+    ],
+    "borrado": false
+  },
+  {
+    "id": 30,
+    "nombre": "asdasd",
+    "descripcion": "asdasda",
+    "stocks": "365",
+    "precio": "3565",
+    "fotosProductos": [
+      "1711522060779.jpg",
+      "1711522060803.jpg"
+    ],
+    "borrado": false
   }
 ]

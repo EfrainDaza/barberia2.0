@@ -28,6 +28,7 @@ const controller = {
         return res.render("createProducts")
     },
     processCreate:(req,res) => {
+       
         let altaProducts = {
             "id": producto.length+1,
             "nombre":req.body.nameProduct,
